@@ -1,0 +1,10 @@
+name = "autobot"
+compatibility_date = "2026-08-08"
+
+# Run your existing build command before publishing the site.
+[build]
+command = "npm run build"
+
+# Tell Wrangler where your static files live (the same folder your esbuild output writes to).
+[site]
+bucket = "./public"
