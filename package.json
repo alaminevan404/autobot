@@ -1,0 +1,16 @@
+{
+  "name": "bookmarklet-bot",
+  "version": "0.1.0",
+  "description": "EVU AI BOT - Bookmarklet overlay for demo/paper-trading (bookmarklet + hosted JS)",
+  "main": "src/loader.js",
+  "scripts": {
+    "build": "esbuild src/loader.js --bundle --minify --sourcemap --outfile=public/bundle.js --platform=browser",
+    "dev": "esbuild src/loader.js --bundle --sourcemap --outfile=public/bundle.js --servedir=public"
+  },
+  "keywords": ["bookmarklet","overlay","paper-trading","demo"],
+  "author": "alaminevan404",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.18.17"
+  }
+}
